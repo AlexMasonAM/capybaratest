@@ -1,0 +1,8 @@
+
+<%= form_for @vegetable do |f| %>
+  Name: <%= f.text_field :name  %>
+  Quantity: <%= f.number_field :quanity %>
+  <%= f.submit 'Add an Ingredient' %>
+<% end %>
+
+<%= link_to 'Add an Ingredient', new_vegetable_path %>

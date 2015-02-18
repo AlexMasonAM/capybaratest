@@ -1,0 +1,6 @@
+
+<%= form_for @vegetable do |f| %>
+  Name: <%= f.text_field :name  %>
+  Quantity: <%= f.number_field :quanity %>
+  <%= f.submit 'Add Ingredient' %>
+<% end %>
